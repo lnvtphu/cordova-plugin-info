@@ -8,7 +8,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="getInfo">
-                <param name="android-package" value="cordova.plugin.info"/>
+                <param name="android-package" value="cordova.plugin.info.Info"/>
             </feature>
         </config-file>
         <source-file src="src/android/Info.java" target-dir="src/com/cordova/plugin/info"/>
