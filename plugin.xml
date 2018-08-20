@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="cordova.plugin.info" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>Cordova Info Device</name>
+    <name>InfoDevice</name>
     <js-module name="foole" src="www/info.js">
         <merges target="navigator.info"/>
     </js-module>
