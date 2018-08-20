@@ -10,8 +10,8 @@ public class Info extends CordovaPlugin {
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
 
         if (action.equals("getInfo")) {
-            String SDkVersion = "Info device: " + String.valueOf(android.os.Build.VERSION.SDK_INT);
-            callbackContext.success(SDkVersion);
+            // String SDkVersion = "Info device: " + String.valueOf(android.os.Build.VERSION.SDK_INT);
+            callbackContext.success("SDkVersion");
 
             return true;
 
