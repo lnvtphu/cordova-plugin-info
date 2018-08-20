@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova.plugin.info" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Cordova Info Device</name>
+    <js-module name="foole" src="www/info.js">
+        <merges target="navigator.info"/>
+    </js-module>
+    <repo>git+https://github.com/lnvtphu/cordova-plugin-info.git</repo>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="info">
+                <param name="android-package" value="cordova.plugin.info"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/info.java" target-dir="src/com/cordova/plugin/info"/>
+    </platform>
+</plugin>
