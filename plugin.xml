@@ -11,6 +11,6 @@
                 <param name="android-package" value="cordova.plugin.info"/>
             </feature>
         </config-file>
-        <source-file src="src/android/info.java" target-dir="src/com/cordova/plugin/info"/>
+        <source-file src="src/android/Info.java" target-dir="src/com/cordova/plugin/info"/>
     </platform>
 </plugin>

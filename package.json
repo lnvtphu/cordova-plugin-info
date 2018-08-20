@@ -19,6 +19,6 @@
       "ecosystem:cordova",
       "cordova-android"
     ],
-    "author": "Foo Le",
+    "author": "Phu Le",
     "license": "Apache-2"
   }
