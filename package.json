@@ -1,0 +1,24 @@
+{
+    "name": "cordova-plugin-info",
+    "version": "1.0.0",
+    "description": "A sample for a new cordova plugin",
+    "cordova": {
+      "id": "cordova.plugin.info",
+      "platforms": [
+        "android"
+      ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/lnvtphu/cordova-plugin-info.git"
+    },
+    "keywords": [
+      "cordova",
+      "plugin",
+      "info",
+      "ecosystem:cordova",
+      "cordova-android"
+    ],
+    "author": "Foo Le",
+    "license": "Apache-2"
+  }
