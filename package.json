@@ -1,24 +1,29 @@
 {
-    "name": "cordova-plugin-info",
-    "version": "1.0.0",
-    "description": "A sample for a new cordova plugin",
-    "cordova": {
-      "id": "cordova.plugin.info",
-      "platforms": [
-        "android"
-      ]
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/lnvtphu/cordova-plugin-info.git"
-    },
-    "keywords": [
-      "cordova",
-      "plugin",
-      "info",
-      "ecosystem:cordova",
-      "cordova-android"
-    ],
-    "author": "Phu Le",
-    "license": "Apache-2"
+  "name": "cordova-android-toast",
+  "version": "1.0.0",
+  "description": "Android Info Plugin",
+  "cordova": {
+    "id": "cordova-android-info",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "android",
+    "info",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Foo Le",
+  "license": "Apache 2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lnvtphu/cordova-plugin-info.git"
   }
+}
