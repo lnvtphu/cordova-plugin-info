@@ -4,7 +4,7 @@ var AndroidInfo = function() {
     console.log('AndroidInfo instanced');
 };
 
-AndroidInfo.prototype.show = function(msg, onSuccess, onError) {
+AndroidInfo.prototype.getInfo = function(onSuccess, onError) {
     var errorCallback = function(obj) {
         onError(obj);
     };
@@ -13,7 +13,7 @@ AndroidInfo.prototype.show = function(msg, onSuccess, onError) {
         onSuccess(obj);
     };
 
-    exec(successCallback, errorCallback, 'AndroidInfo', 'show', [msg]);
+    exec(successCallback, errorCallback, 'AndroidInfo', 'getInfo', []);
 };
 
 if (typeof module != 'undefined' && module.exports) {

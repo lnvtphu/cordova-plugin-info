@@ -12,21 +12,39 @@ import android.os.Bundle;
 public class AndroidInfo extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-        if ("show".equals(action)) {
-            show(args.getString(0), callbackContext);
+        if ("getInfo".equals(action)) {
+            getInfo(callbackContext);
             return true;
         }
 
         return false;
     }
 
-    private void show(String msg, CallbackContext callbackContext) {
-        if (msg == null || msg.length() == 0) {
-            callbackContext.error("Empty message!");
-        } else {
-            String SDkVersion = "Info device: " + String.valueOf(android.os.Build.VERSION.SDK_INT);
-            Toast.makeText(webView.getContext(), SDkVersion, Toast.LENGTH_LONG).show();
-            callbackContext.success(msg);
-        }
+    private void getInfo(CallbackContext callbackContext) {
+        String androidSDK = String.valueOf(android.os.Build.VERSION.SDK_INT);
+        String androidVersion = String.valueOf(android.os.Build.VERSION.RELEASE);
+        String androidBrand = String.valueOf(android.os.Build.BRAND);
+        String androidManufacturer = String.valueOf(android.os.Build.MANUFACTURER);
+        String androidModel = String.valueOf(android.os.Build.MODEL);
+
+        Info infoDevice = new Info(androidSDK, androidVersion, androidBrand, androidManufacturer, androidModel);
+        // Toast.makeText(webView.getContext(), SDkVersion, Toast.LENGTH_LONG).show();
+        callbackContext.success(infoDevice);
+    }
+}
+
+class Info {
+    private String androidSDK;
+    private String androidVersion;
+    private String androidBrand;
+    private String androidManufacturer;
+    private String androidModel;
+
+    Info(String sdk, String version, String brand, String manufacturer, String model) {
+        this.androidSDK = sdk;
+        this.androidVersion = version;
+        this.androidBrand = brand;
+        this.androidManufacturer = manufacturer;
+        this.androidModel = model;
     }
 }
