@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="cordova.plugin.info" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>InfoDevice</name>
-    <js-module name="foole" src="www/info.js">
-        <merges target="navigator.info"/>
+    <js-module name="info" src="www/info.js">
+        <clobbers target="info" />
     </js-module>
     <repo>git+https://github.com/lnvtphu/cordova-plugin-info.git</repo>
     <platform name="android">
@@ -11,6 +11,6 @@
                 <param name="android-package" value="cordova.plugin.info.Info"/>
             </feature>
         </config-file>
-        <source-file src="src/android/Info.java" target-dir="src/com/cordova/plugin/info"/>
+        <source-file src="src/android/Info.java" target-dir="src/cordova/plugin/info/"/>
     </platform>
 </plugin>
