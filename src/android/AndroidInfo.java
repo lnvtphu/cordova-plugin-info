@@ -29,7 +29,7 @@ public class AndroidInfo extends CordovaPlugin {
 
         Info infoDevice = new Info(androidSDK, androidVersion, androidBrand, androidManufacturer, androidModel);
         // Toast.makeText(webView.getContext(), SDkVersion, Toast.LENGTH_LONG).show();
-        callbackContext.success(infoDevice);
+        callbackContext.success(androidBrand);
     }
 }
 
