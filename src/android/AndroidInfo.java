@@ -8,6 +8,9 @@ import org.json.JSONException;
 import android.content.Context;
 import android.widget.Toast;
 import android.os.Bundle;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class AndroidInfo extends CordovaPlugin {
     @Override
@@ -27,8 +30,20 @@ public class AndroidInfo extends CordovaPlugin {
         String androidManufacturer = String.valueOf(android.os.Build.MANUFACTURER);
         String androidModel = String.valueOf(android.os.Build.MODEL);
 
-        Info infoDevice = new Info(androidSDK, androidVersion, androidBrand, androidManufacturer, androidModel);
+        // Info infoDevice = new Info(androidSDK, androidVersion, androidBrand, androidManufacturer, androidModel);
         // Toast.makeText(webView.getContext(), SDkVersion, Toast.LENGTH_LONG).show();
+        JSONObject infoDevice = new JSONObject();
+        try {
+            infoDevice.put("androidSDK", androidSDK);
+            infoDevice.put("androidVersion", androidVersion);
+            infoDevice.put("androidBrand", androidBrand);
+            infoDevice.put("androidManufacturer", androidManufacturer);
+            infoDevice.put("androidModel", androidModel);
+
+        } catch (JSONException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         callbackContext.success(infoDevice);
     }
 }
