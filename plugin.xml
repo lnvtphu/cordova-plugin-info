@@ -8,7 +8,7 @@
     <repo>git+https://github.com/lnvtphu/cordova-plugin-info.git</repo>
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="getInfo">
+            <feature name="Info">
                 <param name="android-package" value="cordova.plugin.info.Info"/>
             </feature>
         </config-file>
