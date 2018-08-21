@@ -9,7 +9,7 @@
     <engine name="cordova" version=">=3.4.0"/>
   </engines>
 
-  <js-module name="info" src="www/info.js">
+  <asset src="www/info.js" target="js/info.js"/>
 
   <js-module src="www/info.js" name="info">
     <clobbers target="info" />
