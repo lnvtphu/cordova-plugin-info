@@ -11,9 +11,9 @@ module.exports = {
             var signature = packageSpecificToken.signature;
             var certificate = packageSpecificToken.certificate;
             console.log(packageSpecificToken);
+            var deviceId = Windows.Storage.Streams.DataReader.fromBuffer(ASHWID).readGuid();
             
-            
-            successCallback(signature);
+            successCallback(deviceId);
         } catch (error) {
             errorCallback(error);
         }
