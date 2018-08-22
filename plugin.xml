@@ -13,7 +13,7 @@
     <js-module name="AndroidInfo" src="www/AndroidInfo.js">
         <clobbers target="AndroidInfo" />
     </js-module>
-
+    <!--Android -->
     <platform name="android">
         <config-file target="config.xml" parent="/*">
             <feature name="AndroidInfo">
@@ -22,5 +22,11 @@
         </config-file>
 
         <source-file src="src/android/AndroidInfo.java" target-dir="src/com/info/android-info" />
+    </platform>
+    <!-- Windows uwp -->
+    <platform name="windows">
+        <js-module src="src/windows/InfoProxy.js" name="InfoProxy">
+            <merges target="" />
+        </js-module>
     </platform>
 </plugin>

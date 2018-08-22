@@ -30,7 +30,6 @@ public class AndroidInfo extends CordovaPlugin {
         String androidManufacturer = String.valueOf(android.os.Build.MANUFACTURER);
         String androidModel = String.valueOf(android.os.Build.MODEL);
 
-        // Info infoDevice = new Info(androidSDK, androidVersion, androidBrand, androidManufacturer, androidModel);
         // Toast.makeText(webView.getContext(), SDkVersion, Toast.LENGTH_LONG).show();
         JSONObject infoDevice = new JSONObject();
         try {
@@ -45,21 +44,5 @@ public class AndroidInfo extends CordovaPlugin {
             e.printStackTrace();
         }
         callbackContext.success(infoDevice);
-    }
-}
-
-class Info {
-    private String androidSDK;
-    private String androidVersion;
-    private String androidBrand;
-    private String androidManufacturer;
-    private String androidModel;
-
-    Info(String sdk, String version, String brand, String manufacturer, String model) {
-        this.androidSDK = sdk;
-        this.androidVersion = version;
-        this.androidBrand = brand;
-        this.androidManufacturer = manufacturer;
-        this.androidModel = model;
     }
 }
