@@ -13,7 +13,7 @@ module.exports = {
             console.log(packageSpecificToken);
             
             
-            successCallback(signature)
+            successCallback(signature);
         } catch (error) {
             errorCallback(error);
         }
