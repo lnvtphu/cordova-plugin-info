@@ -10,7 +10,7 @@ module.exports = {
             var hardwareId = packageSpecificToken.id;
             var signature = packageSpecificToken.signature;
             var certificate = packageSpecificToken.certificate;
-            console.log(packageSpecificToken);
+            console.log(Windows.System.Profile);
             var deviceId = Windows.Storage.Streams.DataReader.fromBuffer(hardwareId).readGuid();
             
             successCallback(deviceId);
