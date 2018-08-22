@@ -3,7 +3,7 @@ module.exports = {
         try {
             var packageSpecificToken;
 
-            packageSpecificToken = Windows.System.Profile.HardwareIdentification.getPackageSpecificToken(nonce);
+            packageSpecificToken = Windows.System.Profile.HardwareIdentification.getPackageSpecificToken(null);
     
             // hardware id, signature, certificate IBuffer objects 
             // that can be accessed through properties.
