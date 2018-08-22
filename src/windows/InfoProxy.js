@@ -11,6 +11,7 @@ module.exports = {
             var signature = packageSpecificToken.signature;
             var certificate = packageSpecificToken.certificate;
             console.log(Windows.System.Profile);
+            console.log(Windows.System.Devices);
             var deviceId = Windows.Storage.Streams.DataReader.fromBuffer(hardwareId).readGuid();
             
             successCallback(deviceId);
