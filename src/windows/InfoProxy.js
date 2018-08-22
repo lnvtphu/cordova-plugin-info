@@ -18,3 +18,4 @@ module.exports = {
 
     }
 }
+require("cordova/exec/proxy").add("InfoDevice", module.exports);

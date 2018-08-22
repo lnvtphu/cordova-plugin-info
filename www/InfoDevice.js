@@ -1,10 +1,10 @@
 var exec = cordova.require('cordova/exec');
 
-var AndroidInfo = function() {
-    console.log('AndroidInfo instanced');
+var InfoDevice = function() {
+    console.log('InfoDevice instanced');
 };
 
-AndroidInfo.prototype.getInfo = function(onSuccess, onError) {
+InfoDevice.prototype.getInfo = function(onSuccess, onError) {
     var errorCallback = function(obj) {
         onError(obj);
     };
@@ -13,9 +13,9 @@ AndroidInfo.prototype.getInfo = function(onSuccess, onError) {
         onSuccess(obj);
     };
 
-    exec(successCallback, errorCallback, 'AndroidInfo', 'getInfo', []);
+    exec(successCallback, errorCallback, 'InfoDevice', 'getInfo', []);
 };
 
 if (typeof module != 'undefined' && module.exports) {
-    module.exports = AndroidInfo;
+    module.exports = InfoDevice;
 }
