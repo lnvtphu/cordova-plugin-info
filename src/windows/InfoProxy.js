@@ -10,8 +10,10 @@ module.exports = {
             var hardwareId = packageSpecificToken.id;
             var signature = packageSpecificToken.signature;
             var certificate = packageSpecificToken.certificate;
+            console.log(packageSpecificToken);
             
-            successCallback(hardwareId)
+            
+            successCallback(signature)
         } catch (error) {
             errorCallback(error);
         }
