@@ -8,7 +8,7 @@ module.exports = {
             // hardware id, signature, certificate IBuffer objects 
             // that can be accessed through properties.
             var hardwareId = packageSpecificToken.id;
-            var deviceId = Windows.Storage.Streams.DataReader.fromBuffer(hardwareId).readGuid();
+            var uuid = Windows.Storage.Streams.DataReader.fromBuffer(hardwareId).readGuid();
 
             // window version
             var deviceFamilyVersion = Windows.System.Profile.AnalyticsInfo.versionInfo.deviceFamilyVersion;
@@ -22,6 +22,7 @@ module.exports = {
             var easClientDeviceInformation = Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation();
             var infoDevice = {
                 id: easClientDeviceInformation.id,
+                uuid: uuid,
                 productName: easClientDeviceInformation.systemProductName,
                 version: version,
                 manufacture: easClientDeviceInformation.systemManufacturer
