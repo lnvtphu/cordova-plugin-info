@@ -11,7 +11,7 @@
     </engines>
 
     <js-module name="InfoDevice" src="www/InfoDevice.js">
-        <clobbers target="InfoDevice" />
+        <clobbers target="cordova.plugin.InfoDevice" />
     </js-module>
     <!--Android -->
     <platform name="android">
