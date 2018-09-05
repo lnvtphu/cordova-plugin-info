@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-android-info" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova-device-info" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>InfoDevice</name>
 
     <description>InfoDevice Plugin</description>
     <license>Apache 2.0</license>
-    <keywords>android, info</keywords>
+    <keywords>android, windows, info</keywords>
 
     <engines>
       <engine name="cordova" version=">=3.0.0" />

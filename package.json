@@ -1,18 +1,25 @@
 {
-  "name": "cordova-android-toast",
+  "name": "cordova-device-info",
   "version": "1.0.0",
-  "description": "Android Info Plugin",
+  "description": "InfoDevice Plugin",
   "cordova": {
-    "id": "cordova-android-info",
+    "id": "cordova-device-info",
     "platforms": [
-      "android"
+      "android",
+      "windows"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lnvtphu/cordova-plugin-info.git"
   },
   "keywords": [
     "android",
+    "windows",
     "info",
     "ecosystem:cordova",
-    "cordova-android"
+    "cordova-android",
+    "cordova-windows"
   ],
   "engines": [
     {
@@ -22,8 +29,8 @@
   ],
   "author": "Foo Le",
   "license": "Apache 2.0",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lnvtphu/cordova-plugin-info.git"
-  }
+  "bugs": {
+    "url": "https://github.com/lnvtphu/cordova-plugin-info/issues"
+  },
+  "homepage": "https://github.com/lnvtphu/cordova-plugin-info#readme"
 }
